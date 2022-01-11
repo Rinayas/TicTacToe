@@ -142,11 +142,12 @@ def play_music():
         print('\033[2;36;1mPlaying sound while you playing\033[0m')
         os.startfile(file)
 
-play_music()
-whofirst()
+
 if __name__ == '__main__':
     wining_dict = {'X': 0, 'O': 0, 'Tie': 0}
     restart = 'y'
+    play_music()
+    whofirst()
     while restart == 'y':
         gameon = start()
         if gameon == '\033[35mX\033[0m':
